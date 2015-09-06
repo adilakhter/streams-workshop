@@ -30,6 +30,8 @@ object DisplayWebcam {
     // Renders a video stream in a Swing UI.
     val display: Consumer[Frame] = video.display(system)
 
-    // TODO - Your code here.
+    //screen.produceTo(display)
+
+    webcam.produceTo(display)  
   }
 }
